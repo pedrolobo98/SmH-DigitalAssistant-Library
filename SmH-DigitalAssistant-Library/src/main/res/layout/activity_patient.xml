@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PatientActivity"
+    android:background="?attr/colorPrimaryVariant">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+
+        <TextView
+            android:id="@+id/greetTitleP"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:fontFamily="@font/assistant"
+            android:text="Bem vindo(a) de volta"
+            android:textSize="45sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonChat"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:text="Conversar"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greetTitleP" />
+
+        <Button
+            android:id="@+id/buttonDailyTasksP"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:text="Tarefas Diárias"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonChat" />
+
+        <Button
+            android:id="@+id/buttonCalendarP"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:text="Calendário"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDailyTasksP" />
+
+        <Button
+            android:id="@+id/buttonHealthRegP"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:text="Registo de Saúde"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalendarP" />
+
+        <Button
+            android:id="@+id/buttonExitSessionP"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:drawableTop="@drawable/ic_baseline_lock_24"
+            android:text="Terminar\nSessão"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/buttonHealthRegP" />
+
+        <Button
+            android:id="@+id/buttonExitAppP"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:fontFamily="@font/roboto"
+            android:padding="12dp"
+            android:drawableTop="@android:drawable/ic_lock_power_off"
+            android:text="Fechar\nApp"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonHealthRegP" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/patient_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

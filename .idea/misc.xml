@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.21875" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/drawable/bottom_sheet_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/font/assistant_bold.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/font/assistant_light.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/font/roboto_thin.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/activity_medic.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/activity_patient.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/bottom_sheet.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_appointment.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_bot_message.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_dailytasks.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_patient.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_task.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_tasksplan.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/card_view_user_message.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_chat.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_daily_tasks.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_healthreg.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_patient_handle.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_patient_list.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_register.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/fragment_task_list.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/list_item.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/layout/view_buttons.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/SmH-DigitalAssistant-Library/src/main/res/menu/overflow_chat_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/font/assistant_bold.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/activity_medic_mode.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/activity_patient_mode.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/bottom_sheet.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/fragment_chat.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/fragment_patient_list.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/fragment_task_list.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/layout/view_buttons.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/SmartHealth-BI2/AndroidStudioProjects/DigitalAssistantApp-no_aimybox/app/src/main/res/menu/overflow_chat_settings.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.182" />
+        <entry key="app/src/main/res/drawable/2ai_logo_background.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/2ai_logo_foreground.xml" value="0.182" />
+        <entry key="app/src/main/res/drawable/background_ball.xml" value="0.253125" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/fragment_login.xml" value="0.253125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.182" />
+        <entry key="app/src/main/res/drawable/outline_round.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/pixel_2_xl_.xml" value="0.253125" />
+        <entry key="app/src/main/res/drawable/shda_logo_foreground.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/splash_anim.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/splash_logo.xml" value="0.362" />
+        <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.362" />
+        <entry key="app/src/main/res/layout-v28/fragment_calendar.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1861198738170347" />
+        <entry key="app/src/main/res/layout/activity_medic_mode.xml" value="0.24305555555555555" />
+        <entry key="app/src/main/res/layout/activity_patient_handle.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/activity_patient_mode.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_questionnaire.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/buttons.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/calendar_layout.xml" value="0.2423611111111111" />
+        <entry key="app/src/main/res/layout/card_view_appointment.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_view_bot_message.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_view_dailytasks.xml" value="0.2423611111111111" />
+        <entry key="app/src/main/res/layout/card_view_messages.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_view_patient.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/card_view_responses.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_view_task.xml" value="0.2423611111111111" />
+        <entry key="app/src/main/res/layout/card_view_tasksplan.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_view_user_message.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19" />
+        <entry key="app/src/main/res/layout/fragment_daily_tasks.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_exercise.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_healthreg.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_patient_handle.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_patient_list.xml" value="0.2423611111111111" />
+        <entry key="app/src/main/res/layout/fragment_patient_status.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_q_r.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/fragment_task_list.xml" value="0.2423611111111111" />
+        <entry key="app/src/main/res/layout/layout_tester.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.12256944444444444" />
+        <entry key="app/src/main/res/layout/overflow_menu.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/qr_reader_overlay.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/settings_menu.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/testlayout.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/view_buttons.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/view_messages.xml" value="0.15416666666666667" />
+        <entry key="app/src/main/res/layout/view_responses.xml" value="0.15416666666666667" />
+        <entry key="app/src/main/res/menu/overflow_chat_settings.xml" value="0.240625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/2ai_logo.xml" value="0.182" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/2ai_logo_round.xml" value="0.182" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.362" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.362" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/shda_logo.xml" value="0.362" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.240625" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Digital Assistant App</string>
+    <string name="digital_assistant">Digital Assistant</string>
+    <string name="login">Iniciar Sessão</string>
+    <string name="register">Registar Paciente</string>
+    <string name="no_credentials">Vazio! Introduza as suas credenciais de acesso</string>
+    <string name="no_password">Password incorreta! Introduza novamente</string>
+    <string name="wrong_credentials">Credenciais erradas! Tente novamente</string>
+    <string name="exit">Sair</string>
+    <string name="next">Continuar</string>
+    <string name="wait">Aguarde</string>
+    <string name="eula">Ao clicar em continuar declara que leu e aceita os <a href="https://">Termos de Utilização</a> e a <a href="https://">Política de Privacidade</a>.</string>
+    <string name="password_hint">Password</string>
+    <string name="username_id">Username/ID</string>
+    <string name="chat_settings">Opções do chat</string>
+    <string name="settings">Definições gerais</string>
+    <string name="name">Nome</string>
+    <string name="surname">Apelido</string>
+    <string name="id_patient">Número de utente</string>
+    <string name="app_version_full"><![CDATA[Versão beta 0.5 \nDesenvolvido por 2Ai (IPCA) e Financiado pela FCT\n pelos projetos Norte2020 e FEDER]]></string>
+    <string name="app_about"><![CDATA[\nEsta aplicação foi desenvolvida no âmbito do projeto SmartHealth\n(UIDB/05549/2020 & UIDP/05549/2020).\nSuportado pelos programas de financiamento Norte2020 através dos programas Portugal2020 e European Regional Development Fund (FEDER) e co-financiado pela FCT – Fundação para a Ciência e Tecnologia and FCT/MCTES.]]></string>
+    <string name="app_version_simple">0.5b</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

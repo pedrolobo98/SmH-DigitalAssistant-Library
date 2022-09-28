@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smh_digitalassistant_library">
+
+    <application>
+        <activity
+            android:name=".activities.PatientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MedicActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
