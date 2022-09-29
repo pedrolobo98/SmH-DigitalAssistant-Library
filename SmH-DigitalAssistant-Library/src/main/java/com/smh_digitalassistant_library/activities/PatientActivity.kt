@@ -8,8 +8,8 @@ import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.example.digitalassistantapp.fragments.CalendarFragment
 import com.smh_digitalassistant_library.R
+import com.smh_digitalassistant_library.fragments.CalendarFragment
 import com.smh_digitalassistant_library.fragments.ChatFragment
 import com.smh_digitalassistant_library.fragments.DailyTasksFragment
 import com.smh_digitalassistant_library.fragments.HealthRegFragment

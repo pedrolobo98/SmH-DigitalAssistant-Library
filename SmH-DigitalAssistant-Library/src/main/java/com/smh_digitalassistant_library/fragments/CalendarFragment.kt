@@ -1,4 +1,4 @@
-package com.example.digitalassistantapp.fragments
+package com.smh_digitalassistant_library.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.digitalassistantapp.R
+import com.smh_digitalassistant_library.R
+import com.smh_digitalassistant_library.adapters.CalendarAdapter
+import com.smh_digitalassistant_library.models.AppointmentsViewModel
+import com.smh_digitalassistant_library.utils.Constants
+import com.smh_digitalassistant_library.utils.Utility
 import kotlinx.android.synthetic.main.fragment_calendar.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -61,7 +65,7 @@ class CalendarFragment : Fragment() {
         }
         appointmentDrawer.setOnClickListener {  }
         calendarWidget.setOnDateChangeListener { view, year, month, dayOfMonth ->
-            
+
         }
     }
 
@@ -84,9 +88,9 @@ class CalendarFragment : Fragment() {
             for (i in 0 until jsonArray.length()) {
                 val jsonObject = jsonArray.getJSONObject(i)
                 appointmentList.add(Appointments(
-                        jsonObject.getString("eventname"),
-                        jsonObject.getString("datetime")
-                    )
+                    jsonObject.getString("eventname"),
+                    jsonObject.getString("datetime")
+                )
                 )
             }
         }
