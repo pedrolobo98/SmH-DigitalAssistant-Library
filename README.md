@@ -1,8 +1,9 @@
 # Smart Health Digital Assistant - Library
-Smart Health Digital assistant is a chatbot developed to help patients in mental health treatments (incomplete - TODO)
+Smart Health Digital assistant is a portuguese language chatbot developed to help patients in mental health treatments. It helps the patients doing treatments at home by encouraging them to do their daily tasks and to maintain a constant companion, shortening the distance between the medic and the patient, as it also allows the medic to do a daily monitoring of the patient.
 
-Min SDK: 21
-jvmTarget: 1.8
+In order to work properly, this digital assistant must be connected to a specific MySQL database API and a [Rasa chatbot system](https://rasa.com/).
+
+This app was developed with Kotlin language with the minimum SDK: 21.
 
 # How to install
 To install the library you need to create a new Android project and follow the next steps:
@@ -32,18 +33,55 @@ dependencies {
 </manifest>
 ```
 
-3. Call the function from your Main Activity:
+3. Create the following constants for the API Adresses (chatbot server and database):
 ```kotlin
-class MainActivity : AppCompatActivity() {
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
-    
-    (CODE HERE - TODO)
-    
+var RASA_ADDRESS = "https://example.rasa-chabot-server.com/webhooks/rest/"
+var API_ADDRESS = "https://example.database-api.com"
+```
+
+4. Call the function from your Activity or Fragment:
+
+  The following code represents an example function to load the two available modes of the app, the patient mode and the medic mode.
+```kotlin
+private fun startMode(loginToken: String, name: String, uid: Int, pmId: Int, gender: String) {
+  val intent: Intent
+  loading.visibility = View.INVISIBLE
+  when (loginToken) {
+    Constants.MODE_PATIENT -> {
+      intent = Intent(context, PatientActivity::class.java)
+      intent.putExtra("UID", uid.toString())
+      intent.putExtra("Username", name)
+      intent.putExtra("PatientId", pmId.toString())
+      intent.putExtra("Gender", gender)
+      startActivity(intent)
+    }
+    Constants.MODE_MEDIC -> {
+      intent = Intent(context, MedicActivity::class.java)
+      intent.putExtra("UID", uid.toString())
+      intent.putExtra("Username", name)
+      intent.putExtra("MedicId", pmId.toString())
+      intent.putExtra("Gender", gender)
+      startActivity(intent)
+    }
   }
 }
 ```
 
-# How to run
-abcdef
+**NOTE:** You must create the rasa chatbot server and the database or have access to a third party one, as this is only the Android application part. Also keep in mind that the app was developed in portuguese language only.
+
+# Example Run
+
+**Patient mode**
+
+<p float="left">
+  <img src=https://user-images.githubusercontent.com/34798263/193275214-d5a602e8-d48a-4b9c-a012-fa6b0ce69573.png width=200/>
+  <img src=https://user-images.githubusercontent.com/34798263/193275290-7fd0e27f-54f7-482d-a1b2-1e8a989208e1.png width=200/>
+  <img src=https://user-images.githubusercontent.com/34798263/193275312-8049cc73-7200-40b4-96c1-4006b44f2904.png width=200/>
+</p>
+
+**Medic mode**
+
+<p float="left">
+  <img src=https://user-images.githubusercontent.com/34798263/193275446-659b111c-936c-47a5-b73f-3b7407e1e2f3.png width=200/>
+  <img src=https://user-images.githubusercontent.com/34798263/193275475-c3449f9d-84af-4443-8655-3bd66ebc2105.png width=383/>
+</p>
