@@ -73,6 +73,8 @@ private fun startMode(loginToken: String, name: String, uid: Int, pmId: Int, gen
 
 **Patient mode**
 
+In the patient mode you can chat with the chatbot, do your daily tasks, check your medical calendar appointments and check your health register (WIP).
+
 <p float="left">
   <img src=https://user-images.githubusercontent.com/34798263/193275214-d5a602e8-d48a-4b9c-a012-fa6b0ce69573.png width=200/>
   <img src=https://user-images.githubusercontent.com/34798263/193275290-7fd0e27f-54f7-482d-a1b2-1e8a989208e1.png width=200/>
@@ -80,6 +82,8 @@ private fun startMode(loginToken: String, name: String, uid: Int, pmId: Int, gen
 </p>
 
 **Medic mode**
+
+The medic mode you can check all your patients, monitor their evolution in the daily tasks and customize their treatment plan.
 
 <p float="left">
   <img src=https://user-images.githubusercontent.com/34798263/193275446-659b111c-936c-47a5-b73f-3b7407e1e2f3.png width=200/>
