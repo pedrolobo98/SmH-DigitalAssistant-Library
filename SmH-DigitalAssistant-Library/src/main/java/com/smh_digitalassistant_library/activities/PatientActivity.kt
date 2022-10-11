@@ -2,6 +2,7 @@ package com.smh_digitalassistant_library.activities
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +15,9 @@ import com.smh_digitalassistant_library.fragments.ChatFragment
 import com.smh_digitalassistant_library.fragments.DailyTasksFragment
 import com.smh_digitalassistant_library.fragments.HealthRegFragment
 import com.smh_digitalassistant_library.settings.SharedPreference
+import com.smh_digitalassistant_library.utils.Constants.API_ADDRESS
+import com.smh_digitalassistant_library.utils.Constants.HOME_ACTIVITY_KEY
+import com.smh_digitalassistant_library.utils.Constants.RASA_ADDRESS
 import com.smh_digitalassistant_library.utils.Utility
 import kotlinx.android.synthetic.main.activity_patient.*
 
@@ -21,6 +25,7 @@ class PatientActivity : AppCompatActivity() {
     private var userId: String = ""
     private var patientId: String = ""
     var name: String = ""
+    lateinit var lastIntent: Intent
 
     private var notificationManager: NotificationManager? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +35,11 @@ class PatientActivity : AppCompatActivity() {
         patientId = intent.getStringExtra("PatientId").toString()
         name = intent.getStringExtra("Username").toString()
         val gender = intent.getStringExtra("Gender").toString()
-        val mLastClickTime = 0
+        RASA_ADDRESS = intent.getStringExtra("RasaAddress").toString()
+        API_ADDRESS = intent.getStringExtra("ApiAddress").toString()
+        HOME_ACTIVITY_KEY = intent.getStringExtra("LastActivity").toString()
 
-        //MainActivity().finish()
+        lastIntent = Intent(this, Class.forName(HOME_ACTIVITY_KEY))
 
         if (gender == "M") {
             greetTitleP.text = ("Bem vindo de volta $name")
@@ -79,6 +86,7 @@ class PatientActivity : AppCompatActivity() {
 
         buttonExitSessionP.setOnClickListener {
             SharedPreference.setRememberLogin(this, "FALSE")
+            startActivity(lastIntent)
             finish()
         }
 

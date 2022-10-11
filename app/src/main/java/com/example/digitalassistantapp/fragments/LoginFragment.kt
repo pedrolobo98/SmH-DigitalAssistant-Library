@@ -6,23 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
-import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.digitalassistantapp.R
-import com.example.digitalassistantapp.activities.MedicMode
-import com.example.digitalassistantapp.activities.PatientMode
 import com.example.digitalassistantapp.settings.SecureAppPrefs
 import com.example.digitalassistantapp.settings.SharedPreference
 import com.example.digitalassistantapp.utils.Constants
-import com.example.digitalassistantapp.utils.Constants.ACCESS_TOKEN
 import com.example.digitalassistantapp.utils.Constants.API_ADDRESS
+import com.example.digitalassistantapp.utils.Constants.RASA_ADDRESS
 import com.example.digitalassistantapp.utils.EncryptionEngine
 import com.example.digitalassistantapp.utils.Utility
 import com.example.digitalassistantapp.utils.Utility.apiget
 import com.example.digitalassistantapp.utils.Utility.hideKeyboard
 import com.google.android.material.textfield.TextInputLayout
+import com.smh_digitalassistant_library.activities.MedicActivity
+import com.smh_digitalassistant_library.activities.PatientActivity
+import com.smh_digitalassistant_library.utils.Constants.HOME_ACTIVITY_KEY
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.coroutines.*
 import org.json.JSONArray
@@ -149,6 +149,7 @@ class LoginFragment : Fragment() {
                     } else {
                         SharedPreference.setRememberLogin(requireContext(), "FALSE")
                     }
+
                 } else {
                     login_error_text.text = getString(R.string.no_password)
                     login_error_text.visibility = View.VISIBLE
@@ -221,21 +222,29 @@ class LoginFragment : Fragment() {
         loading.visibility = View.INVISIBLE
         when (loginToken) {
             Constants.MODE_PATIENT -> {
-                intent = Intent(context, PatientMode::class.java)
+                intent = Intent(context, PatientActivity::class.java)
                 intent.putExtra("UID", uid.toString())
                 intent.putExtra("Username", name)
                 intent.putExtra("PatientId", pmId.toString())
                 intent.putExtra("Gender", gender)
+                intent.putExtra("LastActivity", "com.example.digitalassistantapp.activities.MainActivity")
+                intent.putExtra("RasaAddress", RASA_ADDRESS)
+                intent.putExtra("ApiAddress", API_ADDRESS)
                 startActivity(intent)
+                activity?.finish()
                 buttonLoginL.text = getString(R.string.next)
             }
             Constants.MODE_MEDIC -> {
-                intent = Intent(context, MedicMode::class.java)
+                intent = Intent(context, MedicActivity::class.java)
                 intent.putExtra("UID", uid.toString())
                 intent.putExtra("Username", name)
                 intent.putExtra("MedicId", pmId.toString())
                 intent.putExtra("Gender", gender)
+                intent.putExtra("LastActivity", "com.example.digitalassistantapp.activities.MainActivity")
+                intent.putExtra("RasaAddress", RASA_ADDRESS)
+                intent.putExtra("ApiAddress", API_ADDRESS)
                 startActivity(intent)
+                activity?.finish()
                 buttonLoginL.text = getString(R.string.next)
             }
             else -> {

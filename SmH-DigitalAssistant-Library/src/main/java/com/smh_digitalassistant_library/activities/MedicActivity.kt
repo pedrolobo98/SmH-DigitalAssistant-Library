@@ -1,5 +1,6 @@
 package com.smh_digitalassistant_library.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,11 +11,16 @@ import com.smh_digitalassistant_library.fragments.PatientListFragment
 import com.smh_digitalassistant_library.fragments.RegisterFragment
 import com.smh_digitalassistant_library.fragments.TaskListFragment
 import com.smh_digitalassistant_library.settings.SharedPreference
+import com.smh_digitalassistant_library.utils.Constants.API_ADDRESS
+import com.smh_digitalassistant_library.utils.Constants.HOME_ACTIVITY_KEY
+import com.smh_digitalassistant_library.utils.Constants.RASA_ADDRESS
 import com.smh_digitalassistant_library.utils.Utility
 import kotlinx.android.synthetic.main.activity_medic.*
 
 class MedicActivity : AppCompatActivity() {
     var userId = ""
+    lateinit var lastIntent: Intent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_medic)
@@ -22,8 +28,11 @@ class MedicActivity : AppCompatActivity() {
         val medicId = intent.getStringExtra("MedicId")
         val name = intent.getStringExtra("Username")
         val gender = intent.getStringExtra("Gender").toString()
+        RASA_ADDRESS = intent.getStringExtra("RasaAddress").toString()
+        API_ADDRESS = intent.getStringExtra("ApiAddress").toString()
+        HOME_ACTIVITY_KEY = intent.getStringExtra("LastActivity").toString()
 
-        //MainActivity().finish()
+        lastIntent = Intent(this, Class.forName(HOME_ACTIVITY_KEY))
 
         if (gender == "M") {
             greetTitleM.text = ("Bem vindo de volta Dr. $name")
@@ -58,6 +67,7 @@ class MedicActivity : AppCompatActivity() {
 
         buttonExitSessionM.setOnClickListener {
             SharedPreference.setRememberLogin(this, "FALSE")
+            startActivity(lastIntent)
             finish()
         }
 

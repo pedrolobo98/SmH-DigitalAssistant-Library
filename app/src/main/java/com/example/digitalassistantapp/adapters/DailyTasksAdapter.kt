@@ -1,19 +1,14 @@
 package com.example.digitalassistantapp.adapters
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
-import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalassistantapp.R
-import com.example.digitalassistantapp.activities.PatientMode
-import com.example.digitalassistantapp.fragments.ChatFragment
 import com.example.digitalassistantapp.models.DailyTasksViewModel
 import com.example.digitalassistantapp.utils.Utility
 
